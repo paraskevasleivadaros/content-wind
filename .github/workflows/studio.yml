@@ -36,7 +36,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          
       - name: Identify package manager
         id: pkgman
         run: |
@@ -44,12 +48,7 @@ jobs:
           package_manager=`[ ! -z "$cache" ] && echo "$cache" || echo "pnpm"`
           echo "cache=$cache" >> $GITHUB_OUTPUT
           echo "package_manager=$package_manager" >> $GITHUB_OUTPUT
-        
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4 # docs https://pnpm.io/continuous-integration#github-actions
-        with:
-            version: 8.6.0
-            
+                   
       - uses: pnpm/action-setup@v4
         if: ${{ steps.pkgman.outputs.package_manager == 'pnpm' }}
         name: Install pnpm
