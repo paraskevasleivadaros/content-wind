@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "content-wind": "latest",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "vue": "3.5.11"  
   },
   "packageManager": "pnpm@9.0.0"
 }
