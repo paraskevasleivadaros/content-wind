@@ -1,6 +1,6 @@
 # My Website
 
-My website made by [Content Wind](https://content-wind.nuxt.space) theme.
+My website made by [Content Wind](https://content-wind.nuxt.space) theme
 
 ## Setup
 
@@ -14,8 +14,8 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) to see your app.
+Then open [http://localhost:3000](http://localhost:3000) to see your app
 
 ## Deployment
 
-Learn more how to deploy on [Nuxt docs](https://nuxt.com/docs/getting-started/deployment).
+Learn more how to deploy on [Nuxt docs](https://nuxt.com/docs/getting-started/deployment)
