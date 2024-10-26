@@ -39,7 +39,8 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 9.0.0
+          dest: ~/setup-pnpm
           
       - name: Identify package manager
         id: pkgman
